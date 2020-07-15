@@ -314,7 +314,7 @@ div.scrollmenu {
 	h2{
 		font-size: 18px;
 	}
-	.image-container-counter{
+	.image-container{
 		height: 260px;
 	}
 }
@@ -325,7 +325,7 @@ div.scrollmenu {
 	h2{
 		font-size: 18px;
 	}
-	.image-container-counter{
+	.image-container{
 		height: 220px;
 	}
 }
@@ -337,7 +337,7 @@ div.scrollmenu {
 	h2{
 		font-size: 15px;
 	}
-	.image-container-counter{
+	.image-container{
 		height: 200px;
 	}
 

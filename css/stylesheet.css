@@ -1,0 +1,345 @@
+@import url('https/://fonts.googleapis.com/css?family=Roboto');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	outline: none;
+	font-family: 'Open-sans', sans-serif;
+}
+body{
+	margin:0;
+	padding: 0;
+	height: 100vh;
+	font-family: 'Open-sans', sans-serif;
+	line-height: 1.5em;
+	font-size: 17px;
+}
+.container{
+	margin: auto;
+}
+img {
+	width: 100%;
+}
+/*div 1*/
+/*showcase 1*/
+#showcase{
+	background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../images/page-title-background.jpg") no-repeat;
+	background-size: cover;
+	margin-bottom: 60px;
+}
+#showcase .row{
+	height: 460px;
+}
+h1{
+	color: #fff;
+	font-size: 50px;
+	margin-bottom: 30px;
+	font-weight: 800;
+}
+
+/*showcase 2*/
+#showcase-career{
+	background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../images/career-title-bg.jpg") no-repeat;
+	background-size: cover;
+	margin-bottom: 60px;
+}
+#showcase-career .row{
+	height: 500px;
+}
+
+/*div 2*/
+#features{
+	margin-bottom: 60px;
+}
+#features .row .image{
+	height: 300px;
+}
+h2{
+	text-align:center;
+	font-size: 40px;
+	font-weight: 800;
+	text-align: center;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+p{
+	color: #888;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+	text-align:center;
+	margin-top: 10px;
+}
+#features .fa{
+	color: #0099ff;
+	font-size: 50px; 
+}
+/*features-images*/
+.image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.image-container:hover .image {
+  opacity: 0.3;
+}
+
+.image-container:hover .middle {
+  opacity: 1;
+}
+.image-text {
+  background: transparent;
+  color: white;
+  padding: 5px 5px;
+}
+.image-container .fa-search{
+	font-size: 12px;
+}
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 90%;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+	display: none
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.5s ease;
+  border-radius: 5px;
+  user-select: none;
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 5px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  opacity: 1;
+}
+
+/* Caption text */
+.fade .image-text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  transition: .5s ease;
+  text-transform: uppercase;
+}
+.fade .image-text:hover {
+  opacity: 1;
+}
+/* Number text (1/4 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 60px;
+}
+.active, .dot:hover {
+  background-color: blue;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.vertical{
+	margin-bottom: 20px;
+	height: 600px;
+}
+#company{
+	padding: 10px 0;
+}
+#company a{
+	padding: 11px 29px 16px 29px;
+	background: #e53c35;
+	color: #fff;
+	border-radius: 5px;
+	text-decoration: none;
+}
+#company li{ 
+	margin-left: 10px;
+}
+#company p, #company h2{
+	text-align:left;
+}
+#company h2{
+	font-size: 28px;
+	letter-spacing: 0px;
+	text-transform: none;
+	color: #143369;
+}
+.company p{
+	margin-bottom: 10px;
+}
+.c-a{
+	margin-bottom: 30px;
+}
+#company .c-a a{
+	background: none;
+	padding: 0;
+	color: #e53c35;
+}
+
+/*counter*/
+.container-counter{
+	width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    overflow: auto;
+}
+.counters a{
+	color: #e53c35;
+	border-radius: 5px;
+	text-decoration: none;
+}
+.counters {
+	background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../images/career-title-bg.jpg") no-repeat;
+	background-size: cover;
+	margin: 30px auto;
+    color: #fff;
+    padding: 20px 20px;
+}
+.counters p{
+	margin: 0
+	padding0
+}
+.counters .container-counter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    text-align: center;
+}
+.counters i {
+    color: lightskyblue;
+    margin-bottom: 5px;
+}
+
+.counters .counter {
+    font-size: 45px;
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    .counters .container-counter {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .counters .container-counter > div:nth-of-type(1),
+    .counters .container-counter > div:nth-of-type(2) {
+        border-bottom: 1px lightskyblue solid;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 400px){
+	 h1{
+		font-size: 25px;
+	}
+	h2{
+		font-size: 18px;
+	}
+	.image-container-counter{
+		height: 260px;
+	}
+}
+@media screen and (max-width: 300px){
+	 h1{
+		font-size: 25px;
+	}
+	h2{
+		font-size: 18px;
+	}
+	.image-container-counter{
+		height: 220px;
+	}
+}
+
+@media screen and (max-width: 250px){
+	 h1{
+		font-size: 20px;
+	}
+	h2{
+		font-size: 15px;
+	}
+	.image-container-counter{
+		height: 200px;
+	}
+
+}
+

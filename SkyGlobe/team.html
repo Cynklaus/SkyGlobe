@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Our Team - SkyGlobe Cargo</title>
+        <link rel="stylesheet" href="css/style1.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="containers">
+            <img src="images/3.jpg" alt="Cinque Terre" width="1000" height="300" class="img1">
+            <div class="center"  style="color: black;">Our Team</div> <br>
+        </div>
+
+        <div class="container">
+            <div class="row" >
+                <div class="col-md-4" style="padding-top: 30px;"> <img src="images/about-2-top-image.png" alt="about-2-top-image"> </div>
+                <div class="col-md-8">
+                    <h1 style="padding-top: 40px; color: #143369;"> About Our Team</h1> <br>
+                    <p>
+                         We work with the best people in the market in order to deliver the most competitive investment
+                        returns & offer the best services to <em> our </em> clients.
+                    </p>
+                    <p> 
+                        In order to deliver the most competitive investment returns & offer the best services to our
+                        clients, we have to have the best people we can get. We have put in place a team with diverse
+                        expertise, a firm commitment to integrity and that adheres to our business standards.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="aboutteam">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4"> 
+                        <img src="images/clock-icon.png" alt="">
+                        <h6 style="font-weight: bold;">Fast Service</h6>
+                        <p style=" font-weight: lighter;">We offer the most efficient, fast and cost effective logistics
+                         solutions.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/paper-icon.png" alt="">
+                        <h6 style="font-weight: bold;">100% Accuracy</h6>
+                        <p style=" font-weight: lighter;">
+                            we offer an expert, tailored approach fully geared to the background and progress of the
+                            transaction
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/paper2-icon.png" alt="">
+                        <h6 style="font-weight: bold;">Safety & Guarantee</h6>
+                        <p style=" font-weight: lighter;">
+                            To guarantee the safety of people and goods, selecting the best earth leakage protection
+                            option
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="counters">
+            <div class="container1">
+                <div>
+                    <p>More Than</p>
+                    <div class="counter" data-target="3000">0</div>
+                    <h5> Locations of Services</h5>
+                </div>
+                <div>
+                    <p>More Than</p>
+                    <div class="counter" data-target="100">0</div>
+                    <h5>Employees worldwide</h5>
+                </div>
+                <div>
+                    <p>More Than</p>
+                    <div class="counter" data-target="200">0</div>
+                    <h5>Trucks in the fleet</h5>
+                </div>
+                <div>
+                    <p>More Than</p>
+                    <div class="counter" data-target="5000">0</div>
+                    <h5> Shipped items</h5>
+                </div>
+            </div>
+            <script>
+                const counters = document.querySelectorAll('.counter');
+                const speed = 200; // The lower the slower
+
+                counters.forEach(counter => {
+                    const updateCount = () => {
+                        const target = +counter.getAttribute('data-target');
+                        const count = +counter.innerText;
+
+                        // Lower inc to slow and higher to slow
+                        const inc = target / speed;
+
+                        // console.log(inc);
+                        // console.log(count);
+
+                        // Check if target is reached
+                        if (count < target) {
+                            // Add inc to count and output in counter
+                            counter.innerText = Math.ceil(count + inc);
+                            // Call function every ms
+                            setTimeout(updateCount, 1);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    updateCount();
+                });
+            </script>
+        </div> <br>
+
+        <div class="members" style="padding: 40px;">
+            <div class="row">
+                <div class="column">
+                    <img src="images/personnel-1-700x430.jpg" alt="" class="img1">
+                    <h4>John Balmer</h4>
+                    <p>CEO & Founder</p>
+                      <hr>
+                </div>
+                <div class="column">
+                    <img src="images/personnel-2-700x430.jpg" alt="" class="img1">
+                    <h4>Marry Scott</h4>
+                    <p>Chief Financial Officer</p>
+                    <hr>
+                </div>
+                <div class="column">
+                    <img src="images/personnel-3-700x430.jpg" alt="" class="img1">
+                    <h4>Elton Johny</h4>
+                    <p>Chief Technology Officer</p>
+                    <hr>
+                </div>
+            </div> <br>
+
+            <div class="row">
+                <div class="column">
+                    <img src="images/personnel-4-700x430.jpg" alt="" class="img1">
+                    <h4>Joseph Smith</h4>
+                    <p>Public Relation</p>
+                    <hr>
+                </div>
+                <div class="column">
+                    <img src="images/personnel-5-700x430.jpg" alt="" class="img1">
+                    <h4>Paula James</h4>
+                    <p>Company’s Secretary</p>
+                    <hr>
+                </div>
+                <div class="column">
+                    <img src="images/personnel-6-700x430.jpg" alt="" class="img1">
+                    <h4>Steve Cook</h4>
+                    <p>General Manager</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="inst" style="background-color: #eaf1e7; padding-top:15px ;" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-9">
+                        <p style="margin-left: 200px"> WE ARE EXPERT IN MANY INDUSTRIES </p>
+                        <h2 style="margin-left: 200px;">Industry Solutions </h2>
+                    </div>
+                </div>
+                <div class="ins" style="text-align:center; padding: 5px;">
+                    <p>
+                        As one of the leading providers of logistics solutions in Africa, Sky Cargo Limited has an
+                        immense portfolio of transport and <br> contract logistics solutions that spans multiple
+                        industries.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="members" style="padding: 40px; text-align: center; background-color: #eaf1e7;">
+            <div class="container">
+                <div class="row gutter">
+                    <div class="column">
+                        <img src="images/airbus-icon.png" alt=" airbus-icon">
+                        <h4 style="color: #143369;"> Aerospace Defence</h4>
+                        <p> The Aerospace & Defence industry requires innovtive supply chain solutions for thier unique demands.</p>
+                        <hr>
+                    </div>
+                    <div class="column">
+                        <img src="images/car-icon.png" alt=" car-icon">
+                        <h4 style="color: #143369;"> Automotive</h4>
+                        <p> Our worldwide network for procurement, distribution and aftermarket logistics ensures your components and vehicles.</p>
+                        <hr>
+                    </div>
+                    <div class="column">
+                        <img src="images/power-icon.png" alt="power-icon">
+                        <h4 style="color: #143369;"> Oil & Gas </h4>
+                        <p> When it comes to managing the logistics of oil & gas, safety and efficiency are the greatest concerns.</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <p style="color: #143369;">Our global logistics network, cutting-edge IT systems, in-house expertise and excellent customer service.
+                Learn More
+            </p>
+        </div> <br>
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <p>
+                            <img src="images/logo_skyglobe_cargo-1-300x112.png" alt="logo"> <br>
+                            Sky Globe Cargo is one of the leading logistics companies in Africa. Its strong market
+                            position
+                            lies in the Airfreight, Sea freight, contract logistics and overland businesses.
+                        </p>
+                        <span> twitter fb In ig sk</span>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 style="color: #fff;">Contact Info</h5>
+                        <p>
+                            115B Cline town <br>
+                            Off Key port Road, Freetown Sierra Leone
+                        </p>
+                        <p> Freetown International Airport</p>
+                        <p> JKIA Embakasi Nairobi, Kenya</p>
+                        <p> +447593395274 </p>
+                        <p>
+                            +16467363144 <br>
+                            +447537106364 <br>
+                            +254101658565 <br>
+                            +23276144207
+                        </p>
+                        <p style="color: red;"> info@skyglobecargo.com</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 style="color: #fff;"> Who We are</h4>
+                        <br>
+                        <p> Home</p>
+                        <hr>
+                        <p> Services</p>
+                        <hr>
+                        <p> Customs</p>
+                        <hr>
+                    </div>
+                    <div class="col-md-3">
+                        <h4></h4>
+                        <br>
+                        <br>
+                        <p> Company </p>
+                        <hr>
+                        <p> Industry</p>
+                        <hr>
+                        <p> Contact </p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rights" style="background-color: black; color: black;">
+            black <br>
+            black
+        </div>
+    </body>
+</html>
